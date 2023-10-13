@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 11:59:04 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/13 12:17:40 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/10/13 12:30:56 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ Zombie* zombieHorde(int N, std::string name);
 
 int main(int ac, char **av) {
 
-    if (!av[1]) {
+    if (!av[2]) {
         std::cout << "Please enter valid arguments (number of zombies and army name.)" << std::endl;
         return 0;
     }
