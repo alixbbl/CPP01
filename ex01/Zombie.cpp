@@ -1,8 +1,19 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   Zombie.cpp                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2023/10/13 15:14:50 by alibourb          #+#    #+#             */
+/*   Updated: 2023/10/13 15:14:51 by alibourb         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "Zombie.hpp"
 
-
 Zombie *newZombie(std::string name) {
-    
+
     Zombie *zombie = new Zombie();
     zombie->set_Name(name);
     return zombie; }

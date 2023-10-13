@@ -1,33 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 12:04:26 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/13 14:47:45 by alibourb         ###   ########.fr       */
+/*   Created: 2023/10/13 14:34:29 by alibourb          #+#    #+#             */
+/*   Updated: 2023/10/13 15:02:38 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
-
+#include "Weapon.hpp"
+#include "HumanA.hpp"
+#include "HumanB.hpp"
+#include <cstdlib>
 #include <iostream>
 #include <string>
 
-class Zombie {
+int main()
+{
+	{
+		Weapon club = Weapon("crude spiked club");
+		HumanA bob("Bob", club);
+		bob.attack();
+		club.setType("some other type of club");
+		bob.attack();
+	}
 
-    public:
-        Zombie() : _name("") {}
-        ~Zombie() {
-            std::cout << "Destroying zombie: " << _name << std::endl; }
-        bool        set_Name(std::string str);
-        void        announce(void);
-
-    private:
-        std::string _name;
-        bool        only_alpha(std::string str);
-};
-
-#endif
+	{
+		Weapon club = Weapon("crude spiked club");
+		HumanB jim("Jim");
+		jim.setWeapon(club);
+		jim.attack();
+		club.setType("some other type of club");
+		jim.attack();
+	}
+	return 0;
+}

@@ -1,33 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   Zombie.hpp                                         :+:      :+:    :+:   */
+/*   Weapon.hpp                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/13 12:04:26 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/13 14:47:45 by alibourb         ###   ########.fr       */
+/*   Created: 2023/10/13 14:46:16 by alibourb          #+#    #+#             */
+/*   Updated: 2023/10/13 15:11:29 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef ZOMBIE_HPP
-# define ZOMBIE_HPP
+#ifndef WEAPON_HPP
+# define WEAPON_HPP
 
 #include <iostream>
 #include <string>
 
-class Zombie {
+class Weapon {
 
-    public:
-        Zombie() : _name("") {}
-        ~Zombie() {
-            std::cout << "Destroying zombie: " << _name << std::endl; }
-        bool        set_Name(std::string str);
-        void        announce(void);
+	public:
+		const std::string &getType() const;
+		void	setType(std::string type_of_weapon);
 
-    private:
-        std::string _name;
-        bool        only_alpha(std::string str);
+	private:
+		std::string type;
 };
 
 #endif
