@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 14:46:16 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/14 12:03:04 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/10/14 13:54:05 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,16 +21,15 @@ Le constructeur de la classe Weapon prend le nom d'une arme en argument (string)
 cela permet d'initialiser l'attribut type de l'objet qui sera cree de la
 classe Weapon.
 
-La fonction getType retourne une reference constante, c'est l'autre point important
-de l'exercice.
+La fonction getType retourne une reference constante sur string, c'est l'autre
+point important de l'exercice.
 */
 
 class Weapon {
 
 	public:
-	Weapon(std::string weapon_name);
-	~Weapon();
-
+	Weapon(std::string weapon_name); 	// constructeur prenant une string en arg
+	~Weapon();							// destructeur simple (aucune allocation)
 		std::string const &getType();
 		void	setType(std::string type_of_weapon);
 
