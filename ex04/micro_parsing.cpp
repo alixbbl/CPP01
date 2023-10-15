@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 14:26:08 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/14 16:30:31 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/10/15 17:37:54 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,14 +51,16 @@ bool	micro_parsing(int ac, char **av) {
 		std::cerr	<< "Must enter 3 arguments for this programm to run !"
 					<< std::endl;
 		return false; }
-
 	/*
 	On fait une conversion en string depuis char * pour un meilleur usage des
 	fonctions des biblis du C++. On evite ainsi de devoir jouer avec les
 	pointeurs et donc avec les fonctions du langage C (strcat, strcpy etc).
 	*/
-
 	std::string arg1(av[1]), arg2(av[2]), arg3(av[3]); // conversion des 3 args
+
+	if (arg1.empty() || arg2.empty() || arg3.empty()) {
+		std::cerr << "Empty strings are forbidden." << std::endl;
+		return false; }
 
 	if (!isValidFile(arg1)) {
 		std::cerr	<< "First argument must be a valid file name."
