@@ -15,7 +15,7 @@
 #include <string>
 #include <iostream>
 
-/************************* COSNTRUCTOR & DESTRUCTOR ***************************/
+/************************* CONSTRUCTOR & DESTRUCTOR ***************************/
 
 HumanA::HumanA(std::string name, Weapon &weapon_A) : _name(name), _weapon(weapon_A)
 {

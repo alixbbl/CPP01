@@ -31,7 +31,6 @@ bool	only_alpha(std::string str) {
 			return false; }
 	return true; }
 
-
 /*
 ifstream est un type de std, il est utile pour lire a partir d'un fichier
 en lecture seulement, ici on cree un objet de type ifstream appele "file"
@@ -43,7 +42,6 @@ bool	isValidFile(const std::string &filename) {
 
 	std::ifstream file(filename.c_str());
 		return file.good(); }
-
 
 bool	micro_parsing(int ac, char **av) {
 

@@ -67,7 +67,6 @@ void ft_replace(const std::string &infile, const std::string &str1,
 		return ; }
 }
 
-
 int main(int ac, char **av) {
 
 	if (micro_parsing(ac, av)) {
@@ -78,4 +77,3 @@ int main(int ac, char **av) {
 		return FAILURE; }
 	return SUCCESS;
 }
-
