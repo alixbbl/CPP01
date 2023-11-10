@@ -6,7 +6,7 @@
 #    By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/07 15:04:06 by alibourb          #+#    #+#              #
-#    Updated: 2023/10/13 11:59:40 by alibourb         ###   ########.fr        #
+#    Updated: 2023/11/10 14:58:12 by alibourb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,7 +19,7 @@ SRC 			= \
 
 OBJ = $(SRC:.cpp=.o)
 
-CC				= g++
+CC				= c++
 RM				= rm -f
 CXXFLAGS		= -Wall -Wextra -Werror --std=c++98
 

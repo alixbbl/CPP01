@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 12:04:26 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/13 14:47:45 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/11/10 14:28:34 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,15 +19,16 @@
 class Zombie {
 
     public:
-        Zombie() : _name("") {}
-        ~Zombie() {
-            std::cout << "Destroying zombie: " << _name << std::endl; }
-        bool        set_Name(std::string str);
+        Zombie(); // constructeur par default
+        ~Zombie(); // destructeur
+        void        set_Name(std::string str);
         void        announce(void);
 
     private:
         std::string _name;
-        bool        only_alpha(std::string str);
 };
+
+void randomChump(std::string name);
+Zombie *newZombie(std::string name);
 
 #endif

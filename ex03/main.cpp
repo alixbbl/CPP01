@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 14:34:29 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/14 11:46:16 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/11/02 17:15:00 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,6 @@ donner une Weapon a chaque Human.
 Il existe un concept appele heritage de classe qui permettrait, pour cet exemple
 de creer une classe Human, au dessus de HumanA et HumanB, et qui regroupe les
 caracteristiques communes des deux comme : name, weapon ou encore attack.
-Ici, on definit attack, qui est tres courte, au sein de la classe.
 */
 
 int main()

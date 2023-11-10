@@ -12,10 +12,10 @@ Harl::~Harl(void){
 
 /***************************** PUBLIC FUNCTIONS *******************************/
 
-/* On declare ici via le typedef un objet qui est un pointeur sur fonction membre 
-de la classe Harl. La declaration de fptr ET la creation de l'alias sont 
-concomittentes. 
-Si on va chercher l'adresse d'une fonction membre, on utilise la syntaxe 
+/* On declare ici via le typedef un objet qui est un pointeur sur fonction membre
+de la classe Harl. La declaration de fptr ET la creation de l'alias sont
+concomittentes.
+Si on va chercher l'adresse d'une fonction membre, on utilise la syntaxe
 &NomDeLaClasse::NomDeLaFonction */
 
 void    Harl::complain(std::string level) {
@@ -44,7 +44,6 @@ void    info(void) {
                 << "I cannot believe adding extra bacon costs more money. You "
                 << "didn’t put enough bacon in my burger ! If you did, "
                 << "I wouldn’t be asking for more !" << std::endl; }
-
 void    warning(void) {
     std::cout << "[ WARNING ]"
                 << "I think I deserve to have some extra bacon for free. I’ve "

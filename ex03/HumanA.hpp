@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 14:44:19 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/14 12:29:38 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/11/10 15:32:28 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@
 class HumanA {
 
 	public:
-	HumanA(std::string name, Weapon &weapon_A);
+	HumanA(void); // default constructor
+	HumanA(std::string name, Weapon &weapon_A); // constructor avec arguments
 	~HumanA();
 		void	attack(void);
 

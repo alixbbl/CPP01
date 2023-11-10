@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 11:59:30 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/13 11:59:35 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/11/02 16:08:12 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,3 +19,6 @@ Zombie* zombieHorde(int N, std::string name) {
         Horde[i].set_Name(name); }
     return Horde;
 }
+/*
+On cree et on alloue un tableau d'objets de classe Zombie (Horde).
+*/

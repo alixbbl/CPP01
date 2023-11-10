@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 12:25:53 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/13 14:21:22 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/11/10 15:04:50 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,13 +16,16 @@
 
 /* LES REFERENCES EN C++
 
-Ressemblent aux pointeurs, permettent de creer des alias. Caracteristiques :
+Ressemblent aux pointeurs, permettent de creer des alias.
+
+Caracteristiques :
 
 - ne peuvent pas etre NULL;
 - ne peuvent etre assignees qu'une seule fois.
 - initialisation immediate obligatoirement, contrairement aux pointeurs.
 - pas besoin d'utiliser l'operateur de dereferencement (*) pour acceder a la
 valeur.
+
 Ici on a donc :
 &string : adresse memoire de la string,
 &stringPTR : adresse memoire du pointeur stringPTR,

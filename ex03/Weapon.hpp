@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 14:46:16 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/14 13:54:05 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/11/10 15:33:14 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ point important de l'exercice.
 class Weapon {
 
 	public:
+	Weapon(); // default constructor
 	Weapon(std::string weapon_name); 	// constructeur prenant une string en arg
 	~Weapon();							// destructeur simple (aucune allocation)
 		std::string const &getType();

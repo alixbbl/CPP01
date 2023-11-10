@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 11:59:04 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/13 12:30:56 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/11/10 15:08:33 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,28 +15,32 @@
 #include <string>
 #include <cstdlib>
 
-#define NBR_MIN -50000
-#define NBR_MAX 50000
+#define NBR_MIN 0
+#define NBR_MAX 500
 
-Zombie* zombieHorde(int N, std::string name);
-
+// Le premier argument est le nbre, le second est le nom.
 int main(int ac, char **av) {
 
-    if (!av[2]) {
-        std::cout << "Please enter valid arguments (number of zombies and army name.)" << std::endl;
-        return 0;
-    }
-    int N = atoi(av[1]);
-    std::string name = av[2];
     (void)ac;
+    std::string name;
+
+    if (!av[1]) {
+        std::cout << "Two valid arguments are required." << std::endl;
+        return 0; }
+    if (!av[2])
+        name = "ZOMBIE";
+    else
+        name = av[2];
+    int N = atoi(av[1]);
 
     if (N > NBR_MIN && N < NBR_MAX) {
-        Zombie* Horde = zombieHorde(N, name);
+
+       Zombie* Horde = zombieHorde(N, name);
         for (int i = 0; i < N; i++) {
             Horde[i].announce(); }
         delete[] Horde;
     }
     else
-        std::cout << "Please give a valid number of zombies (between -50 000 and 50 000)" << std::endl;
-    return 0;
-}
+        std::cout   << "Calm down, please enter some "
+                    << "realistic numbers (0 to 500)." << std::endl;
+    return 0;}

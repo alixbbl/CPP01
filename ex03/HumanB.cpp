@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 14:43:15 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/14 12:41:23 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/11/10 14:21:52 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 #include <string>
 #include <iostream>
 
-/************************* COSNTRUCTOR & DESTRUCTOR ***************************/
+/************************* CONSTRUCTOR & DESTRUCTOR ***************************/
 
 // signifie que le champs membre _name est initialise avec la valeur name"
 // passee en parametre lors de l'appel a la fonction.
