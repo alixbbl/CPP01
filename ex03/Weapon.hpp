@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 14:46:16 by alibourb          #+#    #+#             */
-/*   Updated: 2023/11/10 15:33:14 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/11/10 15:46:59 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,8 @@ class Weapon {
 	Weapon(); // default constructor
 	Weapon(std::string weapon_name); 	// constructeur prenant une string en arg
 	~Weapon();							// destructeur simple (aucune allocation)
-		std::string const &getType();
+
+		const std::string &getType(); // retourne une reference const sur type.
 		void	setType(std::string type_of_weapon);
 
 	private:
