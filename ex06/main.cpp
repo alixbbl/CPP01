@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/15 13:33:02 by alibourb          #+#    #+#             */
-/*   Updated: 2023/12/14 14:15:12 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/12/14 13:59:27 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,5 @@ int main(int ac, char **av) {
         return ((std::cout << " Error, wrong argument" << std::endl), 0);
 
     hey_queen.complain(av[1]);
-
     return 0;
 }

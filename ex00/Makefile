@@ -6,7 +6,7 @@
 #    By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/07 15:04:06 by alibourb          #+#    #+#              #
-#    Updated: 2023/11/10 14:58:20 by alibourb         ###   ########.fr        #
+#    Updated: 2023/12/14 14:18:57 by alibourb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,7 @@ OBJ = $(SRC:.cpp=.o)
 
 CC				= c++
 RM				= rm -f
-CXXFLAGS		= -Wall -Wextra -Werror --std=c++98
+CFLAGS			= -Werror -Wextra -Wall -std=c++98
 
 all:			$(NAME)
 
