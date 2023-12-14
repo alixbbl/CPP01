@@ -6,13 +6,14 @@
 #    By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/10/14 14:29:42 by alibourb          #+#    #+#              #
-#    Updated: 2023/10/14 15:47:30 by alibourb         ###   ########.fr        #
+#    Updated: 2023/12/14 11:02:41 by alibourb         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 ATTENTION : la fonction replace() est ici interdite !
 
-En C++98, la bibliothèque <string> fournit un ensemble de fonctionnalités pour
+En C++98, la bibliothèque <string> fournit un ensemble de fonctionnalités po
+ur
 manipuler des chaînes de caractères. Voici certaines des fonctions disponibles
 dans la bibliothèque <string> en C++98 :
 

@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/15 15:36:42 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/15 17:39:04 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/12/14 11:06:57 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,7 @@ void ft_replace(const std::string &infile, const std::string &str1,
 	if (filename.is_open() && file_replace.is_open()) {
 
 		std::string line;
-		while (std::getline(filename, line)) {
+		while (std::getline(filename, line, '\0')) {
 
 			size_t current = 0; // on cree un curseur pour run sur la line.
 			size_t position = line.find(str1, current); // on cherche la première
@@ -73,7 +73,7 @@ int main(int ac, char **av) {
 		std::string arg1(av[1]), arg2(av[2]), arg3(av[3]);
 		ft_replace(arg1.c_str(), arg2.c_str(), arg3.c_str());
 		return FAILURE; }
-	else {
-		return FAILURE; }
+	else
+		return FAILURE;
 	return SUCCESS;
 }

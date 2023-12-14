@@ -6,30 +6,13 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/14 14:26:08 by alibourb          #+#    #+#             */
-/*   Updated: 2023/10/15 17:37:54 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/12/14 11:14:59 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <iostream>
 #include <fstream>
 #include <string>
-
-
-/* Le C++ est plus permissif, on peut passer une string av[1] en argument
-d'un appel de fonction, et avoir la signature suivante, la conversion se fait
-implicitement. On peut donc avoir isValidFile(const string &), en ayant envoye
-la string auparavant.
-
-Fonction file.good() : file.good() verifie que la derniere operation sur file
-a ete un succes, fonctionne en bool.
-*/
-
-bool	only_alpha(std::string str) {
-
-	for (std::string::iterator it = str.begin(); it!= str.end(); it++) {
-		if (!std::isalpha(*it) && *it != ' ' && *it != '-')
-			return false; }
-	return true; }
 
 /*
 ifstream est un type de std, il est utile pour lire a partir d'un fichier
@@ -41,7 +24,9 @@ fichier source (ici filename).
 bool	isValidFile(const std::string &filename) {
 
 	std::ifstream file(filename.c_str());
-		return file.good(); }
+		return file.good(); } /* Fonction file.good() : file.good() verifie
+								que la derniere operation sur file
+								a ete un succes, fonctionne en bool.*/
 
 bool	micro_parsing(int ac, char **av) {
 
@@ -56,17 +41,12 @@ bool	micro_parsing(int ac, char **av) {
 	*/
 	std::string arg1(av[1]), arg2(av[2]), arg3(av[3]); // conversion des 3 args
 
-	if (arg1.empty() || arg2.empty() || arg3.empty()) {
-		std::cerr << "Empty strings are forbidden." << std::endl;
+	if (arg1.empty() || arg2.empty()) {
+		std::cerr << "Empty string in argument str1 is forbidden." << std::endl;
 		return false; }
 
 	if (!isValidFile(arg1)) {
 		std::cerr	<< "First argument must be a valid file name."
-					<< std::endl;
-		return false; }
-
-	if (!only_alpha(arg2) || !only_alpha(arg3)) {
-		std::cerr	<< "Please enter valid sentences (letters or !?.,-)"
 					<< std::endl;
 		return false; }
 

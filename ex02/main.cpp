@@ -6,7 +6,7 @@
 /*   By: alibourb <alibourb@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/13 12:25:53 by alibourb          #+#    #+#             */
-/*   Updated: 2023/11/10 15:04:50 by alibourb         ###   ########.fr       */
+/*   Updated: 2023/12/14 09:46:17 by alibourb         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,7 +42,7 @@ int main(void) {
 	std::string &stringREF = string;
 
 	std::cout << "Adresse de la string en memoire : " << &string << std::endl;
-	std::cout << "Adresse stockee dans stringPTR : " << &stringPTR << std::endl;
+	std::cout << "Adresse stockee dans stringPTR : " << stringPTR << std::endl;
 	std::cout << "Adresse stockee dans stringREF : " << &stringREF << std::endl;
 
 	std::cout << std::endl;
